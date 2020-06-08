@@ -1,5 +1,8 @@
 FROM node:alpine
 
+ENV SERVER_OPTIONS="port=8080 host=0.0.0.0"
+ENV WIKI_NAME="mywiki"
+
 RUN npm install -g tiddlywiki
 
 # Setup wiki volume
